@@ -34,14 +34,11 @@ public class JanelaResize {
                     filePath = chooser.getSelectedFile().getAbsolutePath();
                     System.out.println(filePath);
 
-                    // Criar um JLabel para exibir o caminho do arquivo
                     JLabel label = new JLabel("Arquivo selecionado: " + filePath, SwingConstants.CENTER);
                     label.setFont(new Font("Arial", Font.BOLD, 16));
 
-                    // Adicionar o JLabel no layout da janela
                     janela.add(label);
 
-                    // Atualizar a janela para refletir as mudanças
                     janela.revalidate();
                     janela.repaint();
                 }
